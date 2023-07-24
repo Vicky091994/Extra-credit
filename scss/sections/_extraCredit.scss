@@ -4,11 +4,24 @@
     gap: 0px;
     padding: 10px;
 
+    @include sm{
+        grid-template-columns: auto 567px auto; 
+        display: block;
+     }
+    
+    
     @include md{
-
+        grid-template-columns: auto 768px auto;
+        display: none;
      }
    
-  }
+     @include lg{
+        grid-template-columns: auto 992px auto;
+        display: none;
+     }
+     
+     }
+  
   
   .grid-container > div {
     text-align: center;

@@ -374,6 +374,28 @@ textarea {
   gap: 0px;
   padding: 10px;
 }
+@media (min-width: 576px) {
+  .grid-container {
+    -ms-grid-columns: auto 567px auto;
+    grid-template-columns: auto 567px auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: auto 768px auto;
+    grid-template-columns: auto 768px auto;
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    -ms-grid-columns: auto 992px auto;
+    grid-template-columns: auto 992px auto;
+    display: none;
+  }
+}
+
 .grid-container > div {
   text-align: center;
   padding: 20px;
